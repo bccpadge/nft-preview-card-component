@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+/* css variables */
+:root {
+  --soft-blue-clr: hsl(215, 51%, 70%);
+  --accent-clr: hsl(178, 100%, 50%);
+  --main-bg-clr: hsl(217, 54%, 11%);
+  --card-bg-clr: hsl(216, 50%, 16%);
+  --line-clr: hsl(215, 32%, 27%);
+  --white-clr: hsl(0, 0%, 100%);
+
+  --fw-300: 300;
+  --fw-600: 600;
+  --ff-outfit: "Outfit", sans-serif;
+
+  --transition: 350ms ease;
+  --radius-circle: 50%;
+  --radius-10: 0.625rem;
+}
+
+/* reset */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* general styles */
+body {
+  font-size: 1.125rem;
+  font-family: var(--ff-outfit);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-bg-clr);
+  color: var(--soft-blue-clr);
+  padding: 2.1rem;
+}
+
+/* reusable classes */
+.d-flex-sb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+:is(.nft-title, .nft-banner, .accent-clr):hover {
+  color: var(--accent-clr);
+}
+
+.accent-clr {
+  color: var(--white-clr);
+  transition: var(--transition);
+}
+/* nft card styles */
+.nft-card {
+  background-color: var(--card-bg-clr);
+  max-width: 20.625rem;
+  margin-inline: auto;
+  padding: 1.5625rem;
+  border-radius: var(--radius-10);
+}
+
+.nft-banner {
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.nft-banner::after {
+  --accent-clr-alt: hsla(178, 100%, 50%, 0.5);
+  content: url("../images/icon-view.svg");
+  position: absolute;
+  inset: 0;
+  background-color: var(--accent-clr-alt);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+
+.nft-banner:hover::after {
+  opacity: 1;
+}
+
+.nft-content-group {
+  margin-block-start: 1.5625rem;
+}
+
+.nft-title {
+  font-size: 1.375rem;
+  color: var(--white-clr);
+  transition: var(--transition);
+}
+
+.nft-paragraph {
+  font-size: 1rem;
+  font-weight: var(--fw-300);
+  padding-block: 1.0625rem;
+}
+
+.nft-details {
+  padding-block-end: 1.4375rem;
+  border-bottom: 1px solid var(--line-clr);
+}
+
+.nft-price img,
+.nft-days img {
+  display: inline-block;
+  margin: 0 0.1875rem -0.125rem 0;
+}
+
+.nft-details .nft-price,
+.nft-details .nft-days {
+  font-size: 0.9375rem;
+}
+
+.nft-details .nft-price {
+  font-weight: var(--fw-600);
+  color: var(--accent-clr);
+}
+
+.nft-avatar {
+  padding-block-start: 1.125rem;
+  display: flex;
+}
+
+.nft-avatar .avatar-image {
+  width: 1.875rem;
+  border: 1px solid var(--white-clr);
+  border-radius: var(--radius-circle);
+  margin-block-start: -0.125rem;
+}
+
+.nft-avatar .nft-avatar-name {
+  font-size: 0.8875rem;
+  font-weight: var(--fw-300);
+  margin-inline-start: 0.9375rem;
+}
+
+/* attribution */
+footer {
+  position: fixed;
+  bottom: 1em;
+  text-align: center;
+}
+
+.attribution {
+  font-size: 0.75rem;
+}
+
+.attribution a {
+  color: inherit;
+}
