@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor]()
-- Live Site URL: [Github Pages]()
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/nft-preview-card-component-using-html-and-css-fvpriDTSeQ)
+- Live Site URL: [Github Pages](https://bccpadge.github.io/nft-preview-card-component/)
 
 ## My process
 
