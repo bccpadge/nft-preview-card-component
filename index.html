@@ -1,45 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
-    <title>Frontend Mentor | NFT preview card component</title>
-    <!-- css -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
-  <body>
-    <main class="nft-card">
-      <figure class="nft-banner">
-        <img src="./assets/images/image-equilibrium.jpg" class="nft-image" alt="" aria-hidden="true" />
-      </figure>
-      <div class="nft-content-group">
-        <h1 class="nft-title">Equilibrium #3429</h1>
-        <p class="nft-paragraph">Our Equilibrium collection promotes balance and calm.</p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+  <title>Frontend Mentor | NFT preview card component</title>
+  <!-- css -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <main>
+    <h1 class="visually-hidden">NFT preview card component</h1>
+    <figure class="nft__banner">
+      <img src="./assets/images/image-equilibrium.jpg" alt="" aria-hidden="true">
+      <figcaption class="visually-hidden">3d NFT Cube</figcaption>
+    </figure>
+    <article>
+      <h2 class="title accent-clr">Equilibrium #3429</h2>
+      <p class="description">Our Equilibrium collection promotes balance and calm.</p>
+    </article>
+    <section class="details d-flex-sb" aria-labelledby="title">
+      <h3 class="visually-hidden" id="title">Equilibrium Details </h3>
+      <div class="flex">
+        <img src="./assets/images/icon-ethereum.svg" width="11" height="18" alt="" aria-hidden="true">
+        <p class="detail detail__price">0.041 ETH</p>
       </div>
-      <div class="nft-details d-flex-sb">
-        <div class="nft-price">
-          <img src="./assets/images/icon-ethereum.svg" alt="" aria-hidden="true" />
-          0.041 ETH
-        </div>
-        <div class="nft-days">
-          <img src="./assets/images/icon-clock.svg" alt="" aria-hidden="true" />
-          3 days left
-        </div>
+      <div class="flex">
+        <img src="./assets/images/icon-clock.svg" width="11" height="18" alt="" aria-hidden="true">
+        <p class="detail"> 3 days left</p>
       </div>
-      <div class="nft-avatar">
+    </section>
+    <section class="avatar" aria-labelledby="title">
+      <h3 class="visually-hidden" id="title"> NFT Author</h3>
+      <div class="nft__avatar">
         <figure>
-          <img class="avatar-image" src="./assets/images/image-avatar.png" alt="headshot of Jules Wyvern" />
+          <img src="./assets/images/image-avatar.png" width="30" height="30" alt="headshot of Jules Wyvern">
+          <figcaption class="visually-hidden">A portrait of Jules Wyvern</figcaption>
         </figure>
-        <p class="nft-avatar-name">
-          Creation of
+        <p class="nft__avatar-name"> Creation of
           <span class="accent-clr">Jules Wyvern</span>
         </p>
       </div>
-    </main>
-    <footer class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Rebecca Padgett</a>
-      .
-    </footer>
-  </body>
+    </section>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Rebecca Padgett</a>
+    .
+  </footer>
+</body>
+
 </html>

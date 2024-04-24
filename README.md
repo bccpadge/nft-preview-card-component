@@ -11,6 +11,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
+- [Useful ressources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#Acknowledgments)
 
@@ -25,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![nft preview card component](./mobile-nft-preview-card.png)
+![nft preview card component](./desktop.png)
 
 ### Links
 
@@ -61,10 +62,23 @@ I learned how to use the after pseudo-element to add the icon view image in CSS 
 }
 ```
 
+### Useful resources
+
+- [Nested border radius](https://www.30secondsofcode.org/css/s/nested-border-radius/) - This article helped me with applying the border radius on the image.
+
 ## Author
 
-- Frontend Mentor - [@bccpadge](https://www.frontendmentor.io/profile/bccpadge)
-- Github - [@bccpadge](https://www.github/bccpadge)
+<p align="left">
+  <a href="https://www.frontendmentor.io/profile/bccpadge">
+    <img src="https://img.shields.io/badge/FrontendMentor-57b1e6?style=for-the-badge&logo=frontendmentor&logoColor=white">
+  </a>
+  <a href="https://github.com/bccpadge">
+    <img src="https://img.shields.io/badge/Github-9757e6?style=for-the-badge&logo=github&logoColor=white">
+ </a>
+  <a href="https://www.linkedin.com/in/rebecca-padgett23">
+    <img src="https://img.shields.io/badge/Linkedin-004182?style=for-the-badge&logo=linkedin&logoColor=white">
+  </a>
+</p>
 
 ## Acknowledgments
 
